@@ -8,7 +8,7 @@ const client = webdriverio.remote(options);
 client
     .init()
     .url('https://duckduckgo.com/')
-    .setValue('#search_form_input_homepage', 'WebdriverIO')
+    .setValue('#search_form_input_homepage', 'webdriverIO')
     .click('#search_button_homepage')
     .getTitle().then(function(title) {
         console.log('Title is: ' + title);
