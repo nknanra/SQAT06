@@ -11,7 +11,7 @@ class CustomWorld {
   }
 
   goToWebsite() {
-    return this.browser.init().url('https://duckduckgo.com/');
+    return this.browser.init().url('https://google.com/');
   }
 }
 
