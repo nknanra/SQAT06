@@ -5,10 +5,10 @@ const should = chai.should()
 "use strict";
 
 
-Given('I go to duck duck go', function(callback) {
+Given('I go to google', function(callback) {
   this.browser
     .init()
-    .url('https://duckduckgo.com/').then(function() {
+    .url('https://google.com/').then(function() {
       callback();
     })
 })
