@@ -1,14 +1,15 @@
 # SQAT06-test
-1. TEST OBJECTIVE: The test objective is to test the web application'https://figure1.com/' registration form        available at url: 'https://app.figure1.com/account/register' by using selenium tool(Web application test         automation tool).
+1. TEST OBJECTIVE: The test objective is to test the web application 'https://figure1.com/' registration form
+   available at url:'https://app.figure1.com/account/register' by using selenium tool(Web application test       automation tool).        
 
 2. TEST TOOLS:Following test tools are required to download on local machine to work with Selenium(Portable         software-testing framework for web applications):
 
- (1) GIT:-Git is a free and open source distributed version control system designed to handle everything from      small to very large projects with speed and efficiency.
+ (1) GIT:-Git is a free and open source distributed version control system designed to handle everything from        small to very large projects with speed and efficiency.
 
-     -> Download Git from 'https://git-scm.com/downloads'.Download it as per operating system installed on your       computer i.e. Mac OS X, Windows, Linux/Unix.
-     -> After download it,check version of the git installed on system by using command 'git --version' at             command prompt.
+     -> Download Git from 'https://git-scm.com/downloads'.Download it as per operating system installed on your computer i.e. Mac OS X, Windows, Linux/Unix.
+     -> After download it,check version of the git installed on system by using command 'git --version' at command prompt.
 
- (2) GITHUB:-GitHub is a distributed version-control platform where users can collaborate on or adopt open          source code projects, fork code, share ideas and more.
+ (2) GITHUB:-GitHub is a distributed version-control platform where users can collaborate on or adopt open           source code projects, fork code, share ideas and more.
 
      -> Create personal account at github.com(url:https://github.com/join?source=header-home)
  
@@ -51,7 +52,7 @@
  ---------------------------------------------------------------------------------------------------------------
 
  -------------PUSH THE UPDATED CODE TO GITHUB AND USE PULL REQUEST TO SHARE THE UPDATED CODE--------------------
-  PUSH CODE TO GITHUB: Do the following steps to push the updated code from local machine back to github at                            your account.
+  PUSH CODE TO GITHUB: Do the following steps to push the updated code from local machine back to github at                           your account.
 
  1) Login to your github account.Go to user'IZZAT BAMIEH'->project 'SQAT06'->Click on Fork at top-right corner      of the web page. It will show all code under your account.
 
@@ -72,8 +73,39 @@
 
  PULL REQUEST: It is used to share your updated code or commit to anyone. For this, do the following:
 
-   -> Click on New pull request under your github account.It will share your updated code to the person you         made the request.
-+-----------------------------------------END OF READ ME FILE----------------------------------------------------
+   -> Click on New pull request under your github account-> Write the comment for the commit-> click on create pull request.It will share your updated code to the person whom you made the pull request.
+
+---------------TEST WEB APPLICATION FIGURE1 REGISTRATION FORM IN CUCUMBER USING SELENIUM TOOL-----------------
+
+(1) Open Command Prompt and start the Selenium server using command:Selenium-standalone start
+
+(2) Open another Command Prompt and change drive to SQAT06 by using command: cd SQAT06
+
+(3) Open Visual Studio Code application on your computer and then go to File->Open File-> Select all file under     folder 'SQAT06' and click on Open button. Under SQAT06 folder, open folder feature ->open support sub-folder,    which conatins:
+  (a) hooks.js-Hooks are used for setup and teardown the environment before and after each scenario.
+  (b) steps.js-This file contains code to execute all steps written in scenario.
+  (c) world.js-World is an isolated context for each scenario, exposed to the hooks and steps.
+  (d) scenario.feature-A feature file can contain a scenario or can contain many scenarios in a single feature file but it usually contains a list of scenarios.
+
+  These all files are required to work in cucumber.      
+
+(4) Write Scenario to test for registration of Figure1 web application in simple english language in(GIVEN,WHEN,THEN)form in scenario.feature file under feature folder.
+
+(5) Write code inside steps.js file to execute all steps written in scenario.feature file. Save the code written.
+
+(6) Write code to assert any element which should be visible or exist on resulting registered account web page in steps.js using chai. 
+
+(7) Run the code written in steps.js one by one as per steps written in scenario.feature file in command prompt using command: .\node_modules\.bin\cucumber-js
+
+(8) If your code run sucessfully, you should see your account is registered on figure1 website and scenario and all steps under it should be pass. 
+
+(9) Push the code changed in step.js,scenario.feature file under feature folder and read me file by using steps specified from line no. 61 to 72 above in readme file.
+
+(10) Pull the request on github to share the updated code-For this, do the following:
+
+   -> Click on New pull request under your github account-> Write the comment for the commit-> click on create pull request.It will share your updated code to the person whom you made the pull request.
+   ----------------------------------------END OF READ ME FILE---------------------------------------------------
+
 
 
 

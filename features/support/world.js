@@ -1,8 +1,8 @@
 const { setWorldConstructor, setDefaultTimeout } = require('cucumber')
 
-setDefaultTimeout(60 * 1000);
+setDefaultTimeout(90 * 1000);
 const webdriverio = require('webdriverio');
-const options = { desiredCapabilities: { browserName: 'firfox' } };
+const options = { desiredCapabilities: { browserName: 'chrome' } };
 
 class CustomWorld {
   constructor({attach, parameters}) {
